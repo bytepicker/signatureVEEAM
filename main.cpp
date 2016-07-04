@@ -43,7 +43,7 @@ int main(int argc, char** argv)
             
         const size_t nThreads = boost::thread::hardware_concurrency();
         
-        vector<vector<unsigned short> > outputResult(nThreads);
+        vector<vector<unsigned int> > outputResult(nThreads);
         boost::asio::io_service ioService;
         
         for (size_t i = 0; i < nThreads; ++i) {
